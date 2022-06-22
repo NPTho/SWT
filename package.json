@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "mocha --no-timeouts --bail --reporter mochawesome",
-    "p-test": "mocha test/parallel-test.js --no-timeouts -p"
+    "test1": "mocha test1 --reporter mochawesome",
+    "test2": "mocha test2 --no-timeouts -p"
   },
   "author": "",
   "license": "ISC",

@@ -15,32 +15,42 @@
 
 // chai.use(chaihttp)
 
-// describe('Test Parallel', () => {
-//     it('The request "get:/users/all" should be an object', function (done) {
+// describe('The request "get:/users/all" should be an object', () => {
+//     it('', function (done) {
 //         chai.request(app)
 //             .get("/users/all")
 //             .end((err, res) => {
-//                 res.body.should.be.a('object')
-//                 done()
+//                 setTimeout(() => {
+//                     res.body.should.be.a('object')
+//                     done()
+//                 }, 2000)
 //             })
 //     });
+// });
 
-//     it('The request "get:/users/name" should be an object', function (done) {
+// describe('The request "get:/users/name" should be an object', () => {
+//     it('', function (done) {
 //         chai.request(app)
 //             .get("/users/Harry")
 //             .end((err, res) => {
-//                 res.body.should.be.a('object')
-//                 done()
+//                 setTimeout(() => {
+//                     res.body.should.be.a('object')
+//                     done()
+//                 }, 2000)
 //             })
 //     });
+// })
 
-//     it('The request "delete:/users/Harry" should be an object', function (done) {
+
+// describe('The request "delete:/users/Harry" should be an object', () => {
+//     it('', function (done) {
 //         chai.request(app)
 //             .delete("/users/Harry")
 //             .end((err, res) => {
-//                 res.body.should.be.a('object')
-//                 done()
+//                 setTimeout(() => {
+//                     res.body.should.be.a('object')
+//                     done()
+//                 }, 1000)
 //             })
 //     });
-
-// });
+// })

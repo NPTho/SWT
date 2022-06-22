@@ -31,7 +31,7 @@ describe('Get Users in MongoDB', () => {
         chai.request(app)
             .get("/users/Harry")
             .end((err, res) => {
-                res.should.have.status(2000)
+                res.should.have.status(200)
                 res.body.name.should.eql('Harry')
                 done()
             })
