@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "mocha test1 --reporter mochawesome"
+    "test1": "mocha test1 --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
