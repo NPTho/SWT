@@ -61,7 +61,7 @@ describe('Updating Users in MongoDB', () => {
 
     it('It will fail to update because the updated email already existed , with status 400, user count = 2, respone an object with codename "DuplicateKey"', function (done) {
         chai.request(app)
-            .patch("/users/Sudoer")
+            .patch("/users/Marry")
             .send({email:"harry@com.vn"})                      
             .end((err, res) => {
                 res.should.have.status(400)

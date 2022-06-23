@@ -19,8 +19,8 @@ const countUser = (callback) => {
 
 
 const newUser = {
-    name: "Sudoer",
-    email: "Sudoer@com.vn",
+    name: "Marry",
+    email: "Marry@com.vn",
     password: "AHSBJKJBDAKJ",
     age: 21
 };
@@ -42,13 +42,13 @@ const newUser2 = {
 
 describe('Creating Users in MongoDB', () => {
     removeAllUser()         //clear the database
-    it('It will success creates the 1st user, with status 201, user count = 1, return name = \'Sudoer\'', function (done) {
+    it('It will success creates the 1st user, with status 201, user count = 1, return name = \'Marry\'', function (done) {
         chai.request(app)
             .post("/users")
-            .send(newUser)                      //name = Sudoer
+            .send(newUser)                      //name = Marry
             .end((err, res) => {
                 res.should.have.status(201)
-                res.body.user.name.should.eql('Sudoer')
+                res.body.user.name.should.eql('Marry')
                 countUser((count) => {
                     count.should.eql(1)         //user count = 1
                     done()

@@ -23,7 +23,7 @@ describe('Delete Users in MongoDB', () => {
                 res.body.should.be.a('object')
                 res.body.error.should.eql("User not found")
                 countUser((count) => {
-                    count.should.eql(2)           
+                    count.should.eql(2)
                     done()
                 })
             })
@@ -37,11 +37,10 @@ describe('Delete Users in MongoDB', () => {
                 res.body.should.be.a('object')
                 res.body.name.should.eql('Mike')
                 countUser((count) => {
-                    count.should.eql(1)           
+                    count.should.eql(1)
                     done()
                 })
             })
-     
     });
 
 });
